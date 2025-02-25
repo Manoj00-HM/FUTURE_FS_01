@@ -60,9 +60,13 @@
 </head>
 <body>
 
-    <div class="contact-form">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <div class="contact-left-title">
+              <h2>Contact Me</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="5e0c3e22-956c-449e-8d60-af4bb82bd091">
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
             <textarea id="message" placeholder="Your Message" required></textarea>
